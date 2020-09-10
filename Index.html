@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Cybrilla</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./CSS/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<body>
+
+<!-- Header -->
+
+<header class="header">  
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <a href="" class="logo">LOGO</a>
+			<a href="#" class="title">Invest</a>
+			<a href="#" class="title">Learn</a>
+  <ul class="menu">
+    <li><a href="#" class="headerHome">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blogs</a></li>
+    <li><a href="#" class="headerLogin">Login/Register</a></li>
+  </ul>
+</header>
+<!-- Page content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+      <h3><b>Start Now for Wealth Creation</b></h3>
+      <p>To generate long term capital appreciation and income distribution to investors from a portfolio that is predominantly invested in equi
+        ty and equity related securities of large cap companies.</p>
+        <button class="buttonClass"><a href="">Did you know </a>if you had invested in Rs.50.000 in last 3 years you would have grown by % now</button>
+
+        <div class="tabset">
+          <!-- Tab 1 -->
+          <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+          <label for="tab1">Lum</label>
+          <!-- Tab 2 -->
+          <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+          <label for="tab2">SIP</label>
+          
+          <div class="tab-panels">
+            <section id="marzen" class="tab-panel">
+              <br/>
+              <p class="titlePrice">I can invest
+               <span class="priceRange"> <label for="amount">Rs:</label>
+                <input type="text" id="amount" readonly>
+                </span>
+              </p>
+               <br/>
+              <div id="slider-range"></div>
+             </section>
+            <section id="rauchbier" class="tab-panel">
+              <h2>SIP</h2>
+             </section>
+          </div>
+          
+        </div>
+        <br>
+        <h4>For how many years?</h4>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'London')">1 Y</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">3 Y</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">5 Y</button>
+</div>
+
+<div id="London" class="tabcontent">
+</div>
+
+<div id="Paris" class="tabcontent">
+</div>
+
+<div id="Tokyo" class="tabcontent">
+</div>
+<br><br>
+<hr>
+<div class="row">
+  <div class="col-md-6 col-xs-6">
+<p class="titlePrice">Estimated Value</p>
+<p class="titlePrices">as per Historical Returns</p>
+  </div>
+  <div class="col-md-6 col-xs-6">
+    <p class="titlesPrices">Rs:23,00,000</p>
+<p class="titlePrices">with 9.3% annual returns</p>
+
+  </div>
+  <br>
+  <div>
+    <button class="buttonActive"> Begin Investment</button>
+    <button class="buttonInactive">Check your investment need</button>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <h3><b>Learn more</b></h3>
+      <p class="imageBanner" style="background-image: url('./image/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.png');">
+        <img class="imagePlay" src="./image/play.svg" alt="play"/>
+        
+        </p>
+        <br>
+        <p class="titlePrice">Scheme Details</p>
+        <a href="">ICICI Prudential Bluechip Fund</a>
+  </div>
+</div>
+</div>
+<div class="container fullfluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="lastheading"><b>Plan Your Investment Now</b></h3>
+      <div class="footerClass">
+      <p class="lastsubheading">You can check how much about you should be savings for mutual fund investment here before you decide to invest!</p>
+      <p class="lastsubheadings"><b>I have a financial goal of</b></p>
+      <div class="termprice">
+        <input class="effect" type="text" placeholder="Rs: 5000"> In next <input class="effect" type="text" placeholder="3"> Years
+          <span class="focus-border"></span>
+      </div>
+      <div class="termprice">
+      <button class="buttonActive"> Next</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="./Script/js.js"></script></script>
+</html>

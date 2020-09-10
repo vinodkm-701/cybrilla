@@ -1,0 +1,369 @@
+    body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #F4F4F4;
+opacity: 1;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+.fullfluid{
+  background: #E8ECF4;
+  width:100%!important;
+}
+.lastheading{
+  padding: 10px;
+  padding-left: 9.5%;
+}
+.lastsubheading{
+text-align: center;
+background: #F8FAFF;
+padding:20px;
+}
+.lastsubheadings{
+  text-align: center
+  }
+.footerClass{   
+   margin-left: 10%;
+  margin-right: 10%;
+  background: #ffffff;
+}
+.header {
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  font: normal normal 600 16px/30px Open Sans;
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+}
+
+.header .logo {
+  border-left: 1px solid #f4f4f4;
+  text-align: left;
+  font: normal normal 900 31px/65px Roboto;
+  letter-spacing: 3px;
+  color: #2462ED;
+  padding: 20px 20px 20px 20px;
+  opacity: 0.3;
+  text-decoration: none;
+}
+.header .title {
+  text-align: left;
+  font: normal normal 600 16px/30px Open Sans;
+  padding: 20px;
+  letter-spacing: 0px;
+  color: #333F52;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.headerLogin{
+  background: #2462ED 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    color: white;
+    padding: 8px 15px !important;
+    margin: 12px 25px;
+    width: fit-content;
+  }
+  .buttonActive{
+    background: #2462ED 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    color: white;
+    padding: 8px 50px !important;
+    margin: 12px 25px;
+    text-decoration: none;
+    border: unset;
+    margin-left: 13px;
+  }
+  .buttonInactive{
+    background: white 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    color: #2462ED;
+    padding: 8px 50px !important;
+    margin: 12px 25px;
+    text-decoration: none;
+    border: 1px solid #2462ED;
+    margin-left: 13px;
+  }
+
+  .headerLogin:hover{
+    background: #2462ED 0% 0% no-repeat padding-box;
+      border-radius: 2px;
+      opacity: 1;
+      color: white;
+      padding: 8px 15px !important;
+      margin: 12px 25px;
+    }
+
+  .headerHome{
+    font: normal normal 600 20px/30px Open Sans;
+    color: #2462ED;
+    }
+.imageBanner{
+  background-size: 100% 100%;
+}
+.imagePlay{
+  margin: 27%;
+  margin-left: 42%;
+}
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.buttonClass{    padding: 8px 15px;
+  border: unset;}
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 30px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 50px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #2462ED;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #2462ED;
+}
+
+.tabset > input:checked + label {
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  margin-left:-17px;
+}
+
+.tab-panel {
+  padding: 0px 0;
+
+}
+.ui-slider-horizontal {
+  top: -8px!important;
+height: 0.1em !important;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.59em!important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+ background: #0066cc!important;
+ border: unset !important;
+}
+#amount{
+ border:0;
+  color:#0066cc;
+   font-weight:bold;
+}
+.titlePrice{
+  font-size: 18px;
+   font-weight:bold;
+}
+.titlePrices{
+  font-size: 14px;
+   font-weight:bold;
+}
+.titlesPrices{
+  color:#0066cc;
+  font-size: 18px;
+   font-weight:bold;
+}
+.priceRange{
+  float: right;
+}
+.ui-widget.ui-widget-content {
+  background: #0066cc!important;
+  padding:1px !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+  border:unset !important;
+}
+/* Style the tab */
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 23px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 50px;
+  border: 1px solid silver;
+  margin: 5px 11px;
+  margin-left: -2px;
+  opacity: 0.5;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #2462ED;
+  color:white;
+  opacity: unset;
+}
+.effect{text-align: center;
+  border: none;
+  border-bottom: 2px solid #2462ed;
+  outline:none;
+}
+.termprice{
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* 48em = 768px */
+
+@media (min-width: 58em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  
+  
+}
